@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: ltuekipipelinesjavascriptdocker 
 spec:
-  replicas: 1
+  replicas: 5
   template:
     metadata:
       labels:
