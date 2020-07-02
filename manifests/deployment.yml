@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: ltuekipipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ltuekipipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: ltuekipipelinesjavascriptdocker 
+          image: leetestacr.azurecr.io/ltuekipipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
